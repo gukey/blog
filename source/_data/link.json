@@ -1,0 +1,11 @@
+{
+    "social": {
+        "weibo": "",
+        "github": "",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+	    "鸠摩搜书": "http://www.jiumodiary.com/",
+    	"": ""
+    }
+}

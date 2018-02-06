@@ -1,0 +1,72 @@
+
+git clone git@github.com:gukey/blog.git
+
+
+ssh-keygen -t rsa -C "378738159@qq.com"
+
+
+npm install hexo-deployer-git --save
+
+git config --global user.email "378738159@.com"
+git config --global user.name "gukey"
+
+
+
+详细配置表：
+
+在github新建仓库格式是gukey/gukey.github.io
+
+不然域名无法解析
+
+给博客添加本地搜索功能是：npm install --save hexo-generator-search
+在根目录
+只需要在 Hexo 站点 _config.yml 中添加如下配置即可：
+search:
+  path: search.xml
+  field: all
+
+即可完成配置
+
+npm inastll -g hexo/npm install hexo-cli -g
+
+hexo init
+
+npminstall
+
+ssh-keygen -t rsa -C "378738159@qq.com"
+
+git config --global user.email "378738159@.com"
+git config --global user.name "gukey"
+
+npm install hexo-deployer-git --save
+
+
+插件安装：
+
+备份插件：
+
+npm install hexo-git-backup --save
+
+backup:
+    type: git
+    repository:
+       github: git@github.com:gukey/source.git,master
+       
+
+RSS:
+npm install hexo-generator-feed --save
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+
+
+地图：
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+# hexo sitemap网站地图
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
