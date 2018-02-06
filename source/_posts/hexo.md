@@ -15,10 +15,8 @@ if version is 3.x.x, you should install as follow:
 ```
 npm install hexo-git-backup --save
 ```
-安装好插件后请定期运行下升级命令，以防备份功能无法使用：
-```
-npm install hexo-git-backup --save
-```
+
+[作者-Github](https://github.com/coneycode/hexo-git-backup)
 
 2.安装后打开hexo主目录的`_config.yml文件`，在最下面添加如下设置：
 ```
@@ -84,7 +82,7 @@ function run() {
 }
 ```
 
-即可完成自动部署配置，现在你可以试试，命令中键入以下命令：
+现在你可以试试，命令中键入以下命令：
 ```
 hexo clean && hexo g && hexo d
 ```
